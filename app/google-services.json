@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "862472614407",
+    "project_id": "reebook-3d0f0",
+    "storage_bucket": "reebook-3d0f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:862472614407:android:a9af3396fe13888861b0a2",
+        "android_client_info": {
+          "package_name": "com.example.reebook"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBHi--7egCgZxSihf1Pmt2czmcoTTfnbk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
