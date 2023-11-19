@@ -33,15 +33,15 @@ public class MainActivity extends AppCompatActivity {
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
         }
-//
-//        donate.setOnClickListener(new View.OnClickListener ()
-//        {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(getApplicationContext(), Donate.class);
-//                startActivity(intent);
-//            }
-//        });
+
+        donate.setOnClickListener(new View.OnClickListener ()
+        {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Donate.class);
+                startActivity(intent);
+            }
+        });
 //        receive.setOnClickListener(new View.OnClickListener ()
 //        {
 //            @Override
@@ -82,14 +82,14 @@ public class MainActivity extends AppCompatActivity {
 //                startActivity(intent);
 //            }
 //        });
-//        contact.setOnClickListener(new View.OnClickListener ()
-//        {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(getApplicationContext(), Contact.class);
-//                startActivity(intent);
-//            }
-//        });
+        contact.setOnClickListener(new View.OnClickListener ()
+        {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Contact.class);
+                startActivity(intent);
+            }
+        });
         logout.setOnClickListener(new View.OnClickListener ()
         {
             @Override
