@@ -10,7 +10,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
-    CardView donate, receive, logout, foodmap, about, contact, mypin, history;
+    CardView donate, receive, logout, bookmap, about, contact, profile, history;
     FirebaseAuth fAuth;
 
     @Override
@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
         donate = findViewById(R.id.cardDonate);
         receive = findViewById(R.id.cardReceive);
         logout = findViewById(R.id.cardLogout);
-        foodmap = findViewById(R.id.cardFoodmap);
-        mypin = findViewById(R.id.cardMyPin);
+        bookmap = findViewById(R.id.cardFoodmap);
+        profile = findViewById(R.id.cardMyPin);
         history = findViewById(R.id.cardHistory);
         about = findViewById(R.id.cardAboutus);
         contact = findViewById(R.id.cardContact);
@@ -42,15 +42,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-//        receive.setOnClickListener(new View.OnClickListener ()
-//        {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(getApplicationContext(), Receive.class);
-//                startActivity(intent);
-//            }
-//        });
-//        foodmap.setOnClickListener(new View.OnClickListener ()
+        receive.setOnClickListener(new View.OnClickListener ()
+        {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Recieve.class);
+                startActivity(intent);
+            }
+        });
+//        bookmap.setOnClickListener(new View.OnClickListener ()
 //        {
 //            @Override
 //            public void onClick(View v) {
@@ -66,14 +66,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-//        mypin.setOnClickListener(new View.OnClickListener ()
-//        {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(getApplicationContext(), MyPin.class);
-//                startActivity(intent);
-//            }
-//        });
+        profile.setOnClickListener(new View.OnClickListener ()
+        {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Profile.class);
+                startActivity(intent);
+            }
+        });
 //        history.setOnClickListener(new View.OnClickListener ()
 //        {
 //            @Override
